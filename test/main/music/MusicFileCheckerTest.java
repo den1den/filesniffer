@@ -3,17 +3,15 @@ package main.music;//import static org.junit.Assert.*;
 import org.junit.Test;
 
 import java.io.File;
-import java.util.Arrays;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-import static main.music.MusicChecker.OUTPUT_REGEX;
+import static main.music.MusicFileChecker.OUTPUT_REGEX;
 
 /**
  * Created by Dennis on 5-12-2016.
  */
-public class MusicCheckerTest {
-    MusicChecker m = new MusicChecker();
+public class MusicFileCheckerTest {
+    MusicFileChecker m = new MusicFileChecker();
 
     @Test
     public void testRegex() throws Exception {

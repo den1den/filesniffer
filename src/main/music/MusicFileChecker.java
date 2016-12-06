@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 /**
  * Created by Dennis on 5-12-2016.
  */
-public class MusicChecker {
+public class MusicFileChecker {
     public static final java.util.regex.Pattern OUTPUT_REGEX = Pattern.compile("-\\s(\\w+):\\s(.+)\\s\\[(-?\\d+)\\]");
     static File MP3DiagsExeDir = new File(new File("").getAbsoluteFile(), "tools\\MP3DiagsExe\\");
 
