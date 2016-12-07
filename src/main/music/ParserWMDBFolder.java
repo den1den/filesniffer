@@ -16,9 +16,10 @@ import javax.xml.parsers.SAXParserFactory;
 /**
  * Created by Dennis on 5-12-2016.
  */
-public class WMPFolderParser {
+public class ParserWMDBFolder {
     SAXParser parser;
-    public WMPFolderParser() {
+
+    public ParserWMDBFolder() {
         try {
             parser = SAXParserFactory.newInstance().newSAXParser();
         } catch (ParserConfigurationException | SAXException e) {

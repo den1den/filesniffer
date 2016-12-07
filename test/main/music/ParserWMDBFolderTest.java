@@ -7,8 +7,8 @@ import java.io.File;
 /**
  * Created by Dennis on 5-12-2016.
  */
-public class WMPFolderParserTest {
-    WMPFolderParser p = new WMPFolderParser();
+public class ParserWMDBFolderTest {
+    ParserWMDBFolder p = new ParserWMDBFolder();
 
     @Test
     public void parse() throws Exception {
