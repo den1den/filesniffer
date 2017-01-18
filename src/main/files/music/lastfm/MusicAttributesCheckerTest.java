@@ -1,4 +1,4 @@
-package main.music.lastfm;//import static org.junit.Assert.*;
+package main.files.music.lastfm;//import static org.junit.Assert.*;
 
 import de.umass.lastfm.Artist;
 import de.umass.lastfm.Caller;
@@ -12,7 +12,7 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.Objects;
 
-import static main.music.lastfm.MusicAttributesChecker.LASTFM_KEY;
+import static main.files.music.lastfm.MusicAttributesChecker.LASTFM_KEY;
 
 /**
  * Created by Dennis on 6-12-2016.

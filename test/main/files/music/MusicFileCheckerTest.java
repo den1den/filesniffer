@@ -1,11 +1,11 @@
-package main.music;//import static org.junit.Assert.*;
+package main.files.music;//import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 import java.io.File;
 import java.util.regex.Matcher;
 
-import static main.music.MusicFileChecker.OUTPUT_REGEX;
+import static main.files.music.MusicFileChecker.OUTPUT_REGEX;
 
 /**
  * Created by Dennis on 5-12-2016.

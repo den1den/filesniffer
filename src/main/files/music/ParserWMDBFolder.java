@@ -1,4 +1,4 @@
-package main.music;
+package main.files.music;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;

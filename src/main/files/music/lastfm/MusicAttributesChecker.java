@@ -1,4 +1,4 @@
-package main.music.lastfm;
+package main.files.music.lastfm;
 
 import de.umass.lastfm.Caller;
 

@@ -1,4 +1,4 @@
-package main.music;
+package main.files.music;
 
 import java.io.BufferedReader;
 import java.io.File;

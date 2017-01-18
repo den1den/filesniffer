@@ -1,4 +1,4 @@
-package main.music.lastfm;
+package main.files.music.lastfm;
 
 import de.umass.lastfm.cache.Cache;
 import de.umass.lastfm.cache.DatabaseCache;
@@ -9,22 +9,19 @@ import java.io.InputStream;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import static main.database.DBConnection.DATABASE_LASTFM_TABLE;
+
 /**
  * Created by Dennis on 6-12-2016.
  */
 public class AdvDatabaseCache extends Cache {
-
-    private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/filesniffer"+ DBConnection.DEFAULT_DB_URL_PARAMS;
-    private static final String DATABASE_USER = "filesniffer";
-    private static final String DATABASE_PASSWORD = DATABASE_USER;
-    private static final String DATABASE_TABLE = DATABASE_USER;
 
     private final DatabaseCache deligate;
     private static Cache instance = new AdvDatabaseCache();
 
     private AdvDatabaseCache() {
         try {
-            deligate = new DatabaseCache(DriverManager.getConnection(DATABASE_URL, DATABASE_USER, DATABASE_PASSWORD), DATABASE_TABLE);
+            deligate = new DatabaseCache(DBConnection.getConnection(), DATABASE_LASTFM_TABLE);
         } catch (SQLException e) {
             throw new Error(e);
         }

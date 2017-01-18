@@ -40,5 +40,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="org.jooq:jooq:3.5.0" level="project" />
+    <orderEntry type="library" name="com.mchange:c3p0:0.9.5.2" level="project" />
   </component>
 </module>

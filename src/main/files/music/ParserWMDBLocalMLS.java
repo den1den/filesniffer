@@ -1,4 +1,4 @@
-package main.music;
+package main.files.music;
 
 /**
  * Created by Dennis on 6-12-2016.
