@@ -10,7 +10,9 @@ import org.jooq.impl.DSL;
 import java.beans.PropertyVetoException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.Arrays;
 import java.util.Properties;
 
 /**
@@ -61,6 +63,10 @@ public class DBConnection {
         } catch (SQLException e) {
             throw new Error(e);
         }
+    }
+
+    public static String getInsertSQL(String table, String[] cols, String[] vals){
+        return "INSERT INTO `filesniffer_django`.`"+table+"` (`"+ String.join("`,`", cols)+"`) VALUES ("+String.join(",", vals)+");";
     }
 
     void depr(){
